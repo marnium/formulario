@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="../css/style.css" />
+   <title>Soporte Técnico</title>
+</head>
+<body>
+   <header>
+      <h1>Soporte Técnico</h1>
+      <h2>¿Cómo te puedo ayudar?</h2>
+   </header>
+   <main>
+      <div class="box-indication">
+         <div class="top-rect"></div>
+         <div class="indication">
+            <h3>Información de solicitud de soporte</h3>
+            <p><strong>*</strong>Obligatorio</p>
+         </div>
+      </div>
+      <form>
+         <article class="box-input">
+            <p>Nombre <strong>*</strong></p>
+            <div class="input">
+               <input type="text" name="name" id="name" placeholder="Nombre" autofocus="autofocus" required="required" />
+               <div class="animation-focus">
+                  <div class="left"></div><div class="right"></div>
+               </div>
+            </div>
+            <div class="input">
+               <input type="text" name="lastname" id="lastname" placeholder="Apellido" required="required" />
+               <div class="animation-focus">
+                  <div class="left"></div><div class="right"></div>
+               </div>
+            </div>
+         </article>
+         <article class="box-input">
+            <p>Correo electrónico <strong>*</strong></p>
+            <div class="input">
+               <input type="email" name="email" id="email" required="required" placeholder="Escribe tu correo aquí" />
+               <div class="animation-focus">
+                  <div class="left"></div><div class="right"></div>
+               </div>
+            </div>
+         </article>
+         <article class="box-input">
+            <p>Teléfono</p>
+            <div class="input">
+               <input type="tel" name="tel" id="telephone" placeholder="Ejemplo: 9581186723" pattern="[0-9]{10}"/>
+               <div class="animation-focus">
+                  <div class="left"></div><div class="right"></div>
+               </div>
+            </div>
+         </article>
+         <article class="box-input">
+            <p>¿Cuál es el problema? <strong>*</strong></p>
+            <div class="input">
+               <input type="text" name="issue" id="issue" required="required" placeholder="Escribe problema aquí"/>
+               <div class="animation-focus">
+                  <div class="left"></div><div class="right"></div>
+               </div>
+            </div>
+         </article>
+         <article class="box-input">
+            <p>Por favor, describa en detalle lo sucedido. <strong>*</strong></p>
+            <div class="input">
+               <textarea name="detail" id="detail" cols="30" rows="10" placeholder="Describe tu problema aquí" maxlength="2000" required="required"></textarea>
+            </div>
+         </article>
+         <article class="box-input">
+            <p>Sistema operativo. <strong>*</strong></p>
+            <div class="input">
+               <select name="so" id="so" required="required">
+                  <optgroup label="Microsoft Windows">
+                     <option value="win7">Windows 7</option>
+                     <option value="win10">Windows 10</option>
+                  </optgroup>
+                  <optgroup label="MacOS">
+                     <option value="macCatalina">macOS Catalina</option>
+                     <option value="macMojave">macOS Mojave</option>
+                     <option value="machigsierra">macOS High Sierra</option>
+                     <option value="macsierra">macOS Sierra</option>
+                  </optgroup>
+                  <optgroup label="Linux">
+                     <option value="debian">Debian</option>
+                     <option value="fedora">Ubunt</option>
+                     <option value="manjaro">Fedora</option>
+                  </optgroup>
+               </select>
+            </div>
+         </article>
+         <article class="box-input">
+            <p>Navegador. <strong>*</strong></p>
+            <div class="input">
+               <input type="text" name="browser" id="browser" list="list-browser" required="required" placeholder="Específica tu navegador"/>
+               <div class="animation-focus">
+                  <div class="left"></div><div class="right"></div>
+               </div>
+               <datalist id="list-browser">
+                  <option value="Google Chrome"></option>
+                  <option value="Safari"></option>
+                  <option value="Internet Explorer"></option>
+                  <option value="Firefox"></option>
+                  <option value="Opera"></option>
+               </datalist>
+            </div>
+         </article>
+         <article class="box-button">
+            <input type="submit" value="Enviar" />
+         </article>
+      </form>
+   </main>
+   <footer>
+      <small>Diseñado por Martín Monjaraz Almaraz | Octubre 2020</small>
+   </footer>
+</body>
+</html>
