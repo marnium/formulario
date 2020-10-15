@@ -35,6 +35,7 @@ header {
 
 /* Pricipal */
 main {
+   display: block;
    width: 100%;
    margin: 17px auto 120px;
 }
